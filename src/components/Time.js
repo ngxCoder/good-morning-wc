@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 
-export class Time extends LitElement {
+class Time extends LitElement {
   static get properties() {
     return {
       ip: { type: String },

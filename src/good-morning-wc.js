@@ -1,5 +1,4 @@
 import { LitElement, html, css } from 'lit';
-// import axios from 'axios';
 import './components/Forecast.js';
 import './components/Time.js';
 
