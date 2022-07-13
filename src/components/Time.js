@@ -10,7 +10,7 @@ class Time extends LitElement {
   }
 
   async firstUpdated() {
-    const response = await fetch(`http://worldtimeapi.org/api/ip`);
+    const response = await fetch(`https://worldtimeapi.org/api/ip`);
     const obj = await response.json();
     const utcDate = obj.utc_datetime;
     this.time = new Date(utcDate).toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
